@@ -18,7 +18,7 @@ include_once 'trava.php';
                 <?php
                 $pagina = filter_input(INPUT_GET, 'p');
                 if (empty($pagina) || $pagina == "index") {
-                    include_once 'home.php';
+                    include_once '../admin/home/home.php';
                 } else {
                     if (file_exists($pagina . '.php')) {
                         include_once $pagina . '.php';
